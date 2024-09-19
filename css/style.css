@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.calculator .container {
+  width: 25%;
+  transform: translate(0%, 35%);
+  border: 1px solid #000;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.calculator .screen {
+  background-color: #000;
+  color: #fff;
+  height: 70px;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+.form-control:focus {
+  background-color: #000;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.calculator .btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.calculator .clear-all-items,
+.calculator .clear-last-item {
+  background-color: #b8001fd6;
+}
+.clear-all-items:hover,
+.clear-last-item:hover {
+  background-color: #b8001f;
+}
+.calculator .operator-button {
+  background-color: #507687e0;
+}
+.calculator .operator-button:hover {
+  background-color: #507687;
+}
+
+.calculator .zero-button,
+.duplicate-zerro-button,
+.calculator .one-button,
+.calculator .two-button,
+.calculator .three-button,
+.calculator .four-button,
+.calculator .five-button,
+.calculator .six-button,
+.calculator .seven-button,
+.calculator .eight-button,
+.calculator .nine-button {
+  background-color: #384b70eb;
+}
+
+.calculator .zero-button:hover,
+.calculator .duplicate-zerro-button:hover,
+.calculator .one-button:hover,
+.calculator .two-button:hover,
+.calculator .three-button:hover,
+.calculator .four-button:hover,
+.calculator .five-button:hover,
+.calculator .six-button:hover,
+.calculator .seven-button:hover,
+.calculator .eight-button:hover,
+.calculator .nine-button:hover {
+  background-color: #384b70;
+}
+.calculator .equal-button {
+  background-color: #4379f2e6;
+}
+.calculator .equal-button:hover {
+  background-color: #4379f2;
+}
+
+@media screen and (max-width: 992px) {
+  .calculator .container {
+    width: 100% !important;
+    transform: translate(0%, 17%);
+  }
+  .calculator .btn {
+    height: 70px !important;
+  }
+}
